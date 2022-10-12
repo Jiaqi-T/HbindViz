@@ -29,7 +29,7 @@ First, an Hbind interaction table that lists the hydrogen bond interactions betw
 
 Once you have it installed, you can execute the following command based on the two example files provided in the [`./example_files`](https://github.com/psa-lab/HbindViz/tree/master/example_files) subdirectory (the structure of an [PKCI-substrate analog](https://www.rcsb.org/pdb/explore.do?structureId=1kpf) with its ligand, adenosine monophsophate):
 
-    hbind -p ./example_files/1KPF.pdb -l ./example_files/1KPF_AMP.mol2 
+    ./bin/hbind -p ./example_files/1KPF.pdb -l ./example_files/1KPF_AMP.mol2 
 
 After executing the command above, you should see the following output in your terminal:
 
@@ -64,7 +64,7 @@ Save this output to a simple text file (an example is available at `./example_fi
 
 
 
-*No installation is required to run the `hbind_pymol_cmds.py` Python script included in this directory. ([Python 3.6](https://www.python.org/downloads/release/python-360/) or greater is recommended.)*
+*No installation is required to run the `hbind_pymol_cmds.py` Python script included in this directory. ([Python 2.7](https://www.python.org/downloads/release/python-2718/) is recommended.)*
 
 
 Once you have generated the Hbind interaction table (an example is available at `./example_files/hbind_output.txt`), you can execute the following command to generate the PyMOL commands for visualizing the protein-ligand hydrogen-bond interaction network:
